@@ -18,7 +18,7 @@ Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.ConfigVersion=8
-Meta.AppConfigId=0ff28908-3b0b-4cd4-b9bd-0d468d676032
+GenericModule.Meta.AppConfigId=b30d4f21-bd2c-4bc7-9f2c-c7d2ec5cb147
 App.DisplayName=V Rising
 App.RootDir=./v-rising/
 App.BaseDirectory=./v-rising/1829350/
@@ -27,7 +27,7 @@ App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=1829350
 App.LinuxCommandLineArgs=-a wine "./VRisingServer.exe"
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$PlatformArgs}} -persistentDataPath "{{$FullBaseDir}}save-data" -lanMode {{lanMode}}
+App.CommandLineArgs={{$PlatformArgs}} -persistentDataPath "{{$FullBaseDir}}save-data" -lanMode {{lanMode}} -eos=0
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1604030","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDLLOVERRIDES":"winhttp=n,b","WINEDEBUG":"-all"}
